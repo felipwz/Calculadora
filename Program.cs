@@ -6,13 +6,32 @@ namespace Calculadora
     {
         static void Main(string[] args)
         {
-            Soma();
+            Menu();
         }
 
 
         static void Menu()
         {
+            Console.Clear();
 
+            Console.WriteLine("Bem vindo! Escolha uma opção:");
+            Console.WriteLine("1 - Soma:");
+            Console.WriteLine("2 - Subtração:");
+            Console.WriteLine("3 - Multiplicação:");
+            Console.WriteLine("4 - Divição:");
+            Console.WriteLine("5 - Sair:");
+
+            short res = short.Parse(Console.ReadLine());
+
+            switch (res)
+            {
+                case 1: Soma(); break;
+                case 2: Subtracacao(); break;
+                case 3: Multiplicacao(); break;
+                case 4: Divisao(); break;
+                case 5: System.Environment.Exit(0); break;
+                default: Console.WriteLine("Opção infalida"); break;
+            }
         }
         static void Soma()
 
@@ -59,7 +78,7 @@ namespace Calculadora
         }
 
 
-        static void Multicacao()
+        static void Multiplicacao()
         {
             Console.WriteLine("Escreva um número: ");
             if (!float.TryParse(Console.ReadLine(), out float v1))
