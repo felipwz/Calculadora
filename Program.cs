@@ -23,6 +23,7 @@ namespace Calculadora
                 Console.WriteLine("3 - Multiplicação:");
                 Console.WriteLine("4 - Divisão:");
                 Console.WriteLine("5 - Sair:");
+                Console.WriteLine("---------------------------------");
 
                 short res;
                 while (!short.TryParse(Console.ReadLine(), out res) || res < 1 || res > 5)
@@ -32,7 +33,6 @@ namespace Calculadora
 
 
                 }
-
                 switch (res)
                 {
                     case 1: Soma(); break;
@@ -79,7 +79,7 @@ namespace Calculadora
             {
                 case 1: Menu(); break;
                 case 2: Console.Clear(); System.Environment.Exit(0); break;
-                case 5: Console.Clear(); System.Environment.Exit(0); break;
+                default: Console.Clear(); System.Environment.Exit(0); break;
             }
         }
 
@@ -117,7 +117,7 @@ namespace Calculadora
             {
                 case 1: Menu(); break;
                 case 2: Console.Clear(); System.Environment.Exit(0); break;
-                case 5: Console.Clear(); System.Environment.Exit(0); break;
+                default: Console.Clear(); System.Environment.Exit(0); break;
             }
         }
 
@@ -156,7 +156,7 @@ namespace Calculadora
             {
                 case 1: Menu(); break;
                 case 2: Console.Clear(); System.Environment.Exit(0); break;
-                case 5: Console.Clear(); System.Environment.Exit(0); break;
+                default: Console.Clear(); System.Environment.Exit(0); break;
             }
         }
 
@@ -198,7 +198,7 @@ namespace Calculadora
             {
                 case 1: Menu(); break;
                 case 2: Console.Clear(); System.Environment.Exit(0); break;
-                case 5: Console.Clear(); System.Environment.Exit(0); break;
+                default: Console.Clear(); System.Environment.Exit(0); break;
             }
         }
     }
