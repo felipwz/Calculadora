@@ -1,4 +1,6 @@
-﻿namespace Calculadora
+﻿using System;
+
+namespace Calculadora
 {
     class Program
     {
